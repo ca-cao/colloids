@@ -1,11 +1,11 @@
 1 Modificar el sh para correr las cosas  [x]
-2 unificar programas en python para:
-	2.1 separar capas
+2 unificar programas en python para: [x]
+	2.1 separar capas   
 	2.2 mapeo al plano 
 	2.3 parámetro de orden
 		- hexático
 		- tal vez quiral
 	config.xyz-->python-->configlyr.xyz+parámetro de orden=confighex.xyz
-	2.4 automatizar la salida de imágenes de ovito
+	2.4 automatizar la salida de imágenes de ovito [x]
 		confighex.xyz-->ovito-->imgs.png
 
