@@ -1,0 +1,5 @@
+# ignore configs directories
+corrida2/lamb*
+corrida2/imgs
+conc/
+
