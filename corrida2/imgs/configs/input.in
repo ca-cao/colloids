@@ -1,0 +1,10 @@
+!!Input for copolymers v1.0
+&input
+!
+ kmax  = 1000000               !Number of iterations
+ kt    = 10000                 !Transitory iterations to decrease T
+ kf    = 100000                !Iterations for snapshot
+ ks    = 100000                  !Number of steps for save data
+ check = 100000                !Number of steps for checkpoint
+!
+/
