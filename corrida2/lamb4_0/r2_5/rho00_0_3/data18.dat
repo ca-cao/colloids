@@ -1,0 +1,31 @@
+ ===============================================================================
+ =         Monte Carlo Simulation of Soft-Nanoparticles In Bulk v1.0           =
+ =                                                                             =
+ =                                                                             =
+ =                          by A. Ramirez-Hernandez                            =
+ =                                                                             =
+ ===============================================================================
+ ========================   Block Copolymer Parameters  ========================
+    Number of Particles           =        235
+    Number of A Particles         =          0
+    Number of B Particles         =        235
+    Number Density                =     0.3000
+    nx                            =          2
+    ny                            =          2
+    nz                            =          6
+    LambdaA                       =     4.0000
+    LambdaB                       =     4.0000
+    Rcut                          =     6.0000
+ ===============================================================================
+ =============================   Simulation Data   =============================
+    Lx (sigma)                    =    17.0000
+    Ly (sigma)                    =    17.0000
+    Lz (sigma)                    =    40.0000
+    Energy error (absolute)       =   0.00E+00
+    Temp                          =     0.1000
+    Monte Carlo steps             =     ******
+    MC steps for snapshots        =     100000
+    MC steps for checkpoint       =     100000
+    acceptance ratio              =    10.9492
+    run time (min)                =   118.9575
+ ===============================================================================
