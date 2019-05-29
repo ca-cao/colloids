@@ -62,19 +62,15 @@ def pf(dist,n):
 def lyr(r,pk,dr):
     lyrs=np.zeros((len(pk),2))
     for p in range(len(pk)):
-        a=0
-        c=0
-        for i in range(a,len(r)-1):
+        for i in range(len(r)-1):
             if r[i]>=pk[p]-dr and r[i-1]<pk[p]-dr:
-                lyrs[p,c]=i
-                c+=1
+                lyrs[p,0]=i
             if r[i]>=pk[p]+dr and r[i-1]<pk[p]+dr:
-                lyrs[p,c]=i
-                a=i
+                lyrs[p,1]=i
                 break
-            for i in range(len(pk)):
-                if lyrs[i,1]==0:
-                    lyrs[i,1]=len(r)-1
+    for i in range(len(pk)):
+        if lyrs[i,1]==0:
+            lyrs[i,1]=len(r)-1
     return lyrs
 
 # escribir un archivo xyz
