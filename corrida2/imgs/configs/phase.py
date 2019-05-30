@@ -19,14 +19,16 @@ for i in range(len(data)):
         r=data[i,1]
         rr[c]=i
         c+=1
+rr[-1]=len(data)
 rr=[int(i) for i in rr]
 rc('text', usetex=True)
 
 for j in range(len(rr)-1):
-    sc=plt.scatter(data[rr[j]:rr[j+1],2],data[rr[j]:rr[j+1],0],c=data[rr[j]:rr[j+1],3],cmap='cool')
-    plt.colorbar(sc)
+    sc=plt.scatter(data[rr[j]:rr[j+1],2],data[rr[j]:rr[j+1],0],c=data[rr[j]:rr[j+1],3],cmap='cool',vmin=0,vmax=1)
     plt.ylabel(r'\lambda')
     plt.xlabel(r'\rho')
-    plt.title("Radius of cylinder =={}".format(data[rr[j],1]))
+    plt.title("Radius of cylinder = {}".format(data[rr[j],1]))
+    cbar=plt.colorbar(sc)
+    cbar.ax.set_ylabel('hexatic order parameter '+r'$\psi_6$',rotation=270,labelpad=15)
     plt.show()
     
